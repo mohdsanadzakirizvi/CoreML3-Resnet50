@@ -8,9 +8,6 @@ class ViewController: UIViewController {
   @IBOutlet weak var scene: UIImageView!
   @IBOutlet weak var answerLabel: UILabel!
 
-  // MARK: - Properties
-  let vowels: [Character] = ["a", "e", "i", "o", "u"]
-
   // MARK: - View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
