@@ -22,7 +22,7 @@ class ViewController: UIViewController {
       fatalError("couldn't convert UIImage to CIImage")
     }
 
-    detectScene(image: ciImage)
+    classifyImage(image: ciImage)
   }
 }
 
@@ -40,7 +40,7 @@ extension ViewController {
 // MARK: - Methods
 extension ViewController {
 
-  func detectScene(image: CIImage) {
+  func classifyImage(image: CIImage) {
     answerLabel.text = "detecting..."
   
     // Load the ML model through its generated class
@@ -90,7 +90,7 @@ extension ViewController: UIImagePickerControllerDelegate {
       fatalError("couldn't convert UIImage to CIImage")
     }
 
-    detectScene(image: ciImage)
+    classifyImage(image: ciImage)
   }
 }
 
